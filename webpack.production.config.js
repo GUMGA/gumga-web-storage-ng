@@ -3,16 +3,18 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
+const baseName = "gumga-web-storage";
+
 module.exports = {
     entry: path.join(__dirname, 'src', 'web-storage'),
     output: {
         path: path.join(__dirname, 'dist/'),
-        filename: 'gumga-web-storage.min.js'
+        filename: baseName + '.min.js'
     },
     plugins: [
         new UglifyJSPlugin(),
         new ExtractTextPlugin({
-            filename: "gumga-web-storage.min.css",
+            filename: baseName + ".min.css",
             allChunks: true
         })
     ],

@@ -2,11 +2,13 @@ const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+const baseName = "gumga-web-storage";
+
 module.exports = {
     entry: path.join(__dirname, 'src', 'web-storage'),
     output: {
         path: path.join(__dirname, 'dist/'),
-        filename: 'gumga-web-storage.js',
+        filename: baseName+'.js',
         publicPath: '/dist/'
     },
     devServer: {
@@ -15,7 +17,7 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin({
-            filename: "gumga-web-storage.css",
+            filename: baseName+".css",
             allChunks: true
         })
     ],
