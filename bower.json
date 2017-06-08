@@ -1,5 +1,6 @@
 {
   "name": "gumga-web-storage-ng",
+  "version": "1.1.0",
   "description": "Gumga WebStorage",
   "main": "./src/web-storage.js",
   "authors": [

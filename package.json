@@ -1,6 +1,6 @@
 {
   "name": "gumga-web-storage-ng",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Gumga WebStorage",
   "main": "./src/web-storage.js",
   "directories": {},
@@ -31,7 +31,8 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --config ./webpack.dev.config.js",
-    "prod": "NODE_ENV=production webpack --config ./webpack.production.config.js && webpack --config ./webpack.production.bundle.config"
+    "prod": "NODE_ENV=production webpack --config ./webpack.production.config.js && webpack --config ./webpack.production.bundle.config",
+    "doc": "node ./docs/create-doc.js"
   },
   "keywords": [
     "gumga",
