@@ -1,7 +1,7 @@
 {
   "name": "gumga-web-storage-ng",
   "description": "Gumga WebStorage",
-  "main": "./src/webstorage.js",
+  "main": "./src/web-storage.js",
   "authors": [
     "Gumga Tecnologia da Informação S/A"
   ],
@@ -20,6 +20,6 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "1.5.8"
+    "angular": "^1.5.8"
   }
 }
